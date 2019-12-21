@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:backgroundTint="?attr/actionMenuTextColor"
+    android:orientation="vertical"
+    tools:context=".Main5Activity"
+    android:background="@android:color/black">
+
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="568dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginRight="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:background="@android:color/darker_gray"
+            android:text="date"
+            android:textAlignment="center"
+            android:textColor="#07125F"
+            android:textSize="30dp" />
+
+        <CalendarView
+            android:id="@+id/calendar"
+
+            android:layout_width="match_parent"
+            android:layout_height="395dp"
+            android:background="@android:color/holo_blue_dark" />
+
+        <ImageView
+            android:id="@+id/home3"
+            android:layout_width="66dp"
+            android:layout_height="91dp"
+            app:srcCompat="@drawable/home" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

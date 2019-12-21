@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Main3Activity">
+
+
+    <EditText
+        android:id="@+id/dtview"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:inputType="date" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/entersummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="Write about your day"
+            android:textColorHint="@android:color/holo_green_dark" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        tools:context=".Main3Activity">
+
+
+        <EditText
+            android:id="@+id/datedisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/takedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textColorHint="@android:color/holo_green_dark" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:background="#C98B96B3"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">>
+
+        <EditText
+            android:id="@+id/addsummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+
+            android:ems="10"
+            android:gravity="top"
+            android:hint="Start Here"
+            android:inputType="textMultiLine|textCapSentences"
+
+            android:minHeight="200dp"
+            android:padding="10dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHint="@android:color/holo_green_dark" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/savesum"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Save And Show" />
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:text="Delete It" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="277dp">
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/eventstext"
+                android:drawablePadding="8dp"
+                android:minHeight="300dp"
+                android:shadowColor="@android:color/holo_blue_dark"
+                android:shadowDx="1"
+
+                android:shadowDy="1"
+                android:shadowRadius="4"
+                android:textAlignment="gravity"
+                android:textAppearance="@android:color/holo_blue_dark"
+
+
+                android:textSize="20dp">
+
+
+            </TextView>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/home1"
+        android:layout_width="54dp"
+        android:layout_height="127dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/home" />
+
+
+</LinearLayout>
